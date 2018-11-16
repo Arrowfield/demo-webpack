@@ -1,0 +1,32 @@
+module.exports = {
+  devtool:"eval-source-map",
+  entry:{
+    index:__dirname+"/src/index/index.js"
+  },
+  output:{
+    path:__dirname+"/asset/dev",
+    filename:"[name].bundle.js",
+    publicPath:'../asset/dev/'
+  },
+  devServer:{
+    contentBase:"./",
+    historyApiFallback:false,
+    inline:true,
+    port:8090
+  },
+  //配置babel(webpack自带json解析)可以使用jsx react开发
+  module:{
+    rules:[
+      {
+        test:/(\.jsx|\.js)$/,
+        use:{
+          loader:"babel-loader",
+          options:{
+            presets:['env','react']
+          }
+        },
+        exclude:/node_modules/
+      }
+    ]
+  }
+}
