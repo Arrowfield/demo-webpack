@@ -6,3 +6,12 @@ body{
   background:url("../img/4.jpg") no-repeat;
   background-color: pink;
 }
+div{
+  color:yellow;
+}
+.myTest{
+  color:gray;
+}
+.myPro{
+  text-align: center;
+}
