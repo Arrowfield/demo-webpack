@@ -14,12 +14,14 @@ module.exports = {
       filename: '[name].bundle.js'
   },
   module: {
-    rules: [{
+    rules: [
+      {
         test: /\.css$/,
-        loader: 'style!css'
-    }, {
-        test: /\.js$/,
-        loader: 'babel'
-    }]
+        use: [
+          'style-loader',
+          'css-loader'
+        ]
+      }
+    ]
   }
 }
