@@ -10,7 +10,8 @@ module.exports = {
     // 输出到哪个目录
     path: path.resolve(__dirname,'asset/dev/'),
     // 实例最终输出的名字
-    filename: '[name].bundle.js'
+    filename: '[name].bundle.js',
+    publicPath:'../asset/dev/'
   },
   //模块
   module: {
