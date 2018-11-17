@@ -30,5 +30,11 @@ module.exports = {
         ]
       }
     ]
-  }
+  },
+  devServer:{
+    contentBase:"./",
+    historyApiFallback:false,
+    inline:true,
+    port:8090
+  },
 }
