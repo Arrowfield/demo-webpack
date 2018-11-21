@@ -1,3 +1,7 @@
-# demo-webpack
-webpack打包工具的DEMO
+<pre>
+一、使用WEBPACKDEMO的目的：
 （1）提交更改
+（2）为了更好的实现前后端分离
+（3）优化系统的性能
+（4）减少服务器的压力
+</pre>
