@@ -1,6 +1,0 @@
-const express = require('express')
-const user = require('./router/user')
-var app = express() 
-app.use(express.static('./views'))
-app.use('/user',user)
-app.listen(8090)
